@@ -118,8 +118,18 @@ export default function Home() {
           <div className="services-grid">
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                {/* Strategy/Planning icon - matches old site */}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="#303030" stroke="none">
+                  <rect x="2" y="2" width="20" height="20" rx="1" fill="none" stroke="#303030" strokeWidth="1.5"/>
+                  <circle cx="6" cy="6" r="1.5" fill="#303030"/>
+                  <circle cx="18" cy="6" r="1.5" fill="#303030"/>
+                  <circle cx="6" cy="18" r="1.5" fill="#303030"/>
+                  <circle cx="18" cy="18" r="1.5" fill="#303030"/>
+                  <line x1="6" y1="6" x2="12" y2="12" stroke="#303030" strokeWidth="1.5"/>
+                  <line x1="12" y1="12" x2="18" y2="6" stroke="#303030" strokeWidth="1.5"/>
+                  <line x1="12" y1="12" x2="18" y2="18" stroke="#303030" strokeWidth="1.5"/>
+                  <polygon points="18,18 15,16 16,19" fill="#303030"/>
+                  <polygon points="18,6 15,8 16,5" fill="#303030"/>
                 </svg>
               </div>
               <h3>Digital Transformation</h3>
@@ -128,7 +138,36 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
+                {/* Group of people icon - matches old site */}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="#303030" stroke="none">
+                  <circle cx="12" cy="5" r="3"/>
+                  <circle cx="5" cy="8" r="2.5"/>
+                  <circle cx="19" cy="8" r="2.5"/>
+                  <ellipse cx="12" cy="14" rx="4" ry="3"/>
+                  <ellipse cx="5" cy="16" rx="3" ry="2.5"/>
+                  <ellipse cx="19" cy="16" rx="3" ry="2.5"/>
+                </svg>
+              </div>
+              <h3>IT Recruitment</h3>
+              <p>Delivering highly qualified, best-in-class candidates, guaranteed for your technology needs.</p>
+            </div>
+
+            <div className="service-box">
+              <div className="service-icon">
+                {/* Computer monitor icon - matches old site */}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3>Digital Marketing</h3>
+              <p>We implement lean methodologies to develop winning go-to-market strategies.</p>
+            </div>
+
+            <div className="service-box">
+              <div className="service-icon">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
                   <line x1="12" y1="22.08" x2="12" y2="12"/>
@@ -140,7 +179,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
                   <line x1="18" y1="20" x2="18" y2="10"/>
                   <line x1="12" y1="20" x2="12" y2="4"/>
                   <line x1="6" y1="20" x2="6" y2="14"/>
@@ -152,7 +191,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                   <polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
@@ -163,7 +202,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                 </svg>
               </div>
@@ -173,7 +212,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
                   <circle cx="12" cy="12" r="10"/>
                   <polyline points="12 6 12 12 16 14"/>
                 </svg>
@@ -184,7 +223,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
                   <polyline points="23 4 23 10 17 10"/>
                   <polyline points="1 20 1 14 7 14"/>
                   <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
@@ -192,29 +231,6 @@ export default function Home() {
               </div>
               <h3>Organisational Change Management</h3>
               <p>We specialize in easing the transition into a streamlined digital business with the correct culture.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
-              <h3>IT Recruitment</h3>
-              <p>Delivering highly qualified, best-in-class candidates, guaranteed for your technology needs.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ba292c" strokeWidth="1.5">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                </svg>
-              </div>
-              <h3>Digital Marketing</h3>
-              <p>We implement lean methodologies to develop winning go-to-market strategies.</p>
             </div>
           </div>
         </div>
