@@ -3,15 +3,69 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import Link from 'next/link'
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing | Outsourced CTO',
-  description: 'We spearhead your digital marketing innovation by identifying new opportunities and guiding your strategic execution.',
+  title: 'Digital Marketing Services',
+  description: 'Strategic digital marketing services in South Africa. We develop winning go-to-market strategies consolidating sales, marketing, distribution, and brand development.',
+  keywords: [
+    'digital marketing South Africa',
+    'social media management',
+    'go-to-market strategy',
+    'brand development',
+    'digital strategy',
+    'marketing consulting'
+  ],
+  openGraph: {
+    title: 'Digital Marketing Services | Outsourced CTO',
+    description: 'Strategic digital marketing services. We develop winning go-to-market strategies for your business.',
+    url: 'https://www.outsourcedcto.co.za/digital-marketing',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.outsourcedcto.co.za/digital-marketing',
+  },
 }
 
 export default function DigitalMarketing() {
   return (
     <>
+      <ServiceSchema
+        name="Digital Marketing Services"
+        description="We spearhead digital marketing innovation by identifying new opportunities and guiding strategic execution with winning go-to-market strategies."
+        url="https://www.outsourcedcto.co.za/digital-marketing"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.outsourcedcto.co.za' },
+          { name: 'Digital Marketing', url: 'https://www.outsourcedcto.co.za/digital-marketing' }
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          {
+            question: "What is included in your digital marketing strategy packages?",
+            answer: "Our packages include digital marketing strategy development, brand development and guidelines, social media setup and management, competitive analysis, and analytics reporting. Package scope varies from startup (R5,000) to enterprise level (R25,000)."
+          },
+          {
+            question: "How much does social media management cost?",
+            answer: "Our social media management services range from R10,000 per month for startups to R60,000 per month for enterprise-level companies, depending on the number of platforms, posting frequency, and engagement requirements."
+          },
+          {
+            question: "What does your go-to-market strategy include?",
+            answer: "Our go-to-market strategies seamlessly consolidate sales enablement, marketing campaigns, distribution channels, pricing strategies, brand positioning, competitive analysis, and consumer insights into a practical roadmap for business success."
+          },
+          {
+            question: "Do you help with brand development?",
+            answer: "Yes, we provide comprehensive brand development services including brand strategy, visual identity guidelines, brand positioning, and messaging frameworks to ensure consistent brand communication across all channels."
+          },
+          {
+            question: "Can you help us develop social media policies?",
+            answer: "Absolutely. We help develop your ideal digital footprint in line with global best practices, including creating necessary social media policies and procedures while mitigating risk."
+          }
+        ]}
+      />
+
       <Header />
 
       <PageHero

@@ -3,15 +3,70 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import Link from 'next/link'
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/StructuredData'
 
 export const metadata: Metadata = {
-  title: 'IT Recruitment | Outsourced CTO',
-  description: 'IT recruitment services that deliver highly qualified, best-in-class candidates, guaranteed.',
+  title: 'IT Recruitment Services',
+  description: 'IT recruitment services in South Africa delivering highly qualified, best-in-class candidates, guaranteed. We recruit developers, architects, project managers, and IT executives.',
+  keywords: [
+    'IT recruitment South Africa',
+    'tech recruitment Johannesburg',
+    'software developer recruitment',
+    'IT staffing',
+    'CTO recruitment',
+    'DevOps recruitment',
+    'data scientist recruitment'
+  ],
+  openGraph: {
+    title: 'IT Recruitment Services | Outsourced CTO',
+    description: 'IT recruitment services delivering highly qualified, best-in-class candidates, guaranteed.',
+    url: 'https://www.outsourcedcto.co.za/it-recruitment',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.outsourcedcto.co.za/it-recruitment',
+  },
 }
 
 export default function ITRecruitment() {
   return (
     <>
+      <ServiceSchema
+        name="IT Recruitment Services"
+        description="We deliver highly qualified, best-in-class IT candidates, guaranteed. From developers to CTO-level executives, we find the perfect match for your organization."
+        url="https://www.outsourcedcto.co.za/it-recruitment"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://www.outsourcedcto.co.za' },
+          { name: 'IT Recruitment', url: 'https://www.outsourcedcto.co.za/it-recruitment' }
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          {
+            question: "What IT roles do you recruit for?",
+            answer: "We recruit for all IT roles including Software Developers (all levels and technologies), Solution Architects, Enterprise Architects, Project Managers, DevOps Engineers, Cloud Engineers, Data Scientists and Analysts, CTO and IT Executives, Business Analysts, and Cybersecurity Specialists."
+          },
+          {
+            question: "What makes your IT recruitment guaranteed?",
+            answer: "We stand behind our placements with a guarantee period. If a candidate doesn't work out within the agreed period, we'll find a replacement at no additional cost. This demonstrates our confidence in our rigorous screening process."
+          },
+          {
+            question: "How does your recruitment process work?",
+            answer: "Our process includes: understanding your requirements and culture, sourcing candidates from our extensive network, rigorous technical and cultural screening, presenting shortlisted candidates, supporting the interview process, managing offers and onboarding, and providing a guarantee period for all placements."
+          },
+          {
+            question: "Do you offer LinkedIn profile optimization?",
+            answer: "Yes, we help IT professionals optimize their LinkedIn profiles to stand out to recruiters and hiring managers. A well-crafted profile can significantly increase visibility and opportunities in the IT job market."
+          },
+          {
+            question: "Do you provide salary benchmarking?",
+            answer: "Yes, we offer salary benchmarking and market intelligence reports to help both employers and candidates understand current market rates for IT roles in South Africa."
+          }
+        ]}
+      />
+
       <Header />
 
       <PageHero
