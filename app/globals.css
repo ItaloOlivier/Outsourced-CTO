@@ -520,3 +520,36 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a.active {
   color: var(--accent-color);
 }
+
+/* Page Hero */
+.page-hero {
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 990px) {
+  .page-hero {
+    margin-top: 80px !important;
+  }
+}
+
+/* Form Inputs Focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color) !important;
+}
+
+/* Content Blocks */
+.content-block {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .content-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

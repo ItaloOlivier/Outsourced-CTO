@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const slides = [
   {
@@ -32,17 +33,8 @@ const slides = [
   }
 ]
 
-const navLinks = [
-  { text: 'Home', href: '/' },
-  { text: 'Digital Transformation', href: '/digital-transformation' },
-  { text: 'Digital Marketing', href: '/digital-marketing' },
-  { text: 'IT Recruitment', href: '/it-recruitment' },
-  { text: 'Contact', href: '/contact' }
-]
-
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -53,56 +45,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Header */}
-      <header className="header">
-        <div className="header-inner">
-          <Link href="/" className="logo">
-            <Image
-              src="/images/logo.png"
-              alt="Outsourced CTO"
-              width={300}
-              height={75}
-              priority
-            />
-          </Link>
-
-          <nav className="main-nav">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={link.href === '/' ? 'active' : ''}
-              >
-                {link.text}
-              </Link>
-            ))}
-          </nav>
-
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-
-      {/* Mobile Navigation */}
-      <nav className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={link.href === '/' ? 'active' : ''}
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            {link.text}
-          </Link>
-        ))}
-      </nav>
+      <Header />
 
       {/* Hero Slider */}
       <section className="hero-slider">
@@ -292,54 +235,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-inner">
-          <div className="footer-col">
-            <Image
-              src="/images/logo.png"
-              alt="Outsourced CTO"
-              width={200}
-              height={50}
-              style={{ marginBottom: '20px', filter: 'brightness(0) invert(1)' }}
-            />
-            <p>Your Partner In IT Innovation</p>
-          </div>
-
-          <div className="footer-col">
-            <h4>Quick Links</h4>
-            <Link href="/">Home</Link>
-            <Link href="/digital-transformation">Digital Transformation</Link>
-            <Link href="/digital-marketing">Digital Marketing</Link>
-            <Link href="/it-recruitment">IT Recruitment</Link>
-            <Link href="/contact">Contact</Link>
-          </div>
-
-          <div className="footer-col">
-            <h4>Services</h4>
-            <p>Digital Transformation</p>
-            <p>Business Architecture</p>
-            <p>IT Project Management</p>
-            <p>Digital Business Models</p>
-            <p>IT Recruitment</p>
-          </div>
-
-          <div className="footer-col">
-            <h4>Contact</h4>
-            <p>Palazzo Towers West</p>
-            <p>William Nicol Drive</p>
-            <p>Fourways, Johannesburg</p>
-            <p>Gauteng 2086</p>
-            <p style={{ marginTop: '10px' }}>
-              <a href="mailto:info@outsourcedcto.co.za">info@outsourcedcto.co.za</a>
-            </p>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Outsourced CTO. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
