@@ -48,7 +48,7 @@ export default function Contact() {
           },
           {
             question: "How can I contact Outsourced CTO?",
-            answer: "You can reach us via email at info@outsourcedcto.co.za, WhatsApp at +27 79 192 2423, or through our LinkedIn page. You can also fill out the contact form on our website."
+            answer: "You can reach us via email at italo@outsourcedcto.co.za, WhatsApp at +27 79 192 2423, or through our LinkedIn page. You can also fill out the contact form on our website."
           },
           {
             question: "How quickly can you start a project?",
@@ -107,8 +107,8 @@ export default function Contact() {
                   Email Us
                 </h3>
                 <p style={{ paddingLeft: '30px' }}>
-                  <a href="mailto:info@outsourcedcto.co.za" style={{ color: '#ba292c', textDecoration: 'none' }}>
-                    info@outsourcedcto.co.za
+                  <a href="mailto:italo@outsourcedcto.co.za" style={{ color: '#ba292c', textDecoration: 'none' }}>
+                    italo@outsourcedcto.co.za
                   </a>
                 </p>
               </div>

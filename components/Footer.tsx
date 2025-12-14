@@ -41,7 +41,7 @@ export default function Footer() {
           <p>Bryanston, Johannesburg</p>
           <p>Gauteng 2021</p>
           <p style={{ marginTop: '10px' }}>
-            <a href="mailto:info@outsourcedcto.co.za">info@outsourcedcto.co.za</a>
+            <a href="mailto:italo@outsourcedcto.co.za">italo@outsourcedcto.co.za</a>
           </p>
           <p style={{ marginTop: '5px' }}>
             <a href="https://wa.me/27791922423" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366' }}>
