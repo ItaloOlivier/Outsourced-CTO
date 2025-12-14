@@ -36,12 +36,17 @@ export default function Footer() {
 
         <div className="footer-col">
           <h4>Contact</h4>
-          <p>Palazzo Towers West</p>
-          <p>William Nicol Drive</p>
-          <p>Fourways, Johannesburg</p>
-          <p>Gauteng 2086</p>
+          <p>The Campus</p>
+          <p>Corner of Main &amp; Sloane Street</p>
+          <p>Bryanston, Johannesburg</p>
+          <p>Gauteng 2021</p>
           <p style={{ marginTop: '10px' }}>
             <a href="mailto:info@outsourcedcto.co.za">info@outsourcedcto.co.za</a>
+          </p>
+          <p style={{ marginTop: '5px' }}>
+            <a href="https://wa.me/27791922423" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366' }}>
+              WhatsApp: +27 79 192 2423
+            </a>
           </p>
         </div>
       </div>
