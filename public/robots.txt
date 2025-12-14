@@ -1,0 +1,38 @@
+# Outsourced CTO - robots.txt
+# https://www.outsourcedcto.co.za
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.outsourcedcto.co.za/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Block internal/admin paths (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow AI crawlers to index content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
