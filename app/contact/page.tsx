@@ -5,6 +5,30 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import { BreadcrumbSchema, FAQSchema } from '@/components/StructuredData'
+import FAQSection from '@/components/FAQSection'
+
+const faqs = [
+  {
+    question: "Where is Outsourced CTO located?",
+    answer: "Our office is located at The Campus, Corner of Main & Sloane Street, Bryanston, Johannesburg, Gauteng 2021, South Africa."
+  },
+  {
+    question: "What are your business hours?",
+    answer: "We are open Monday to Friday from 8:00 AM to 5:00 PM. We are closed on weekends and public holidays."
+  },
+  {
+    question: "How can I contact Outsourced CTO?",
+    answer: "You can reach us via email at italo@outsourcedcto.co.za, WhatsApp at +27 79 192 2423, or through our LinkedIn page. You can also fill out the contact form on our website."
+  },
+  {
+    question: "How quickly can you start a project?",
+    answer: "We can typically begin within 1-2 weeks of engagement, depending on scope and team availability."
+  },
+  {
+    question: "Do you work remotely or on-site?",
+    answer: "We offer flexible engagement models including fully remote, on-site, or hybrid arrangements depending on client needs and project requirements."
+  }
+]
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -36,30 +60,7 @@ export default function Contact() {
           { name: 'Contact', url: 'https://www.outsourcedcto.co.za/contact' }
         ]}
       />
-      <FAQSchema
-        faqs={[
-          {
-            question: "Where is Outsourced CTO located?",
-            answer: "Our office is located at The Campus, Corner of Main & Sloane Street, Bryanston, Johannesburg, Gauteng 2021, South Africa."
-          },
-          {
-            question: "What are your business hours?",
-            answer: "We are open Monday to Friday from 8:00 AM to 5:00 PM. We are closed on weekends and public holidays."
-          },
-          {
-            question: "How can I contact Outsourced CTO?",
-            answer: "You can reach us via email at italo@outsourcedcto.co.za, WhatsApp at +27 79 192 2423, or through our LinkedIn page. You can also fill out the contact form on our website."
-          },
-          {
-            question: "How quickly can you start a project?",
-            answer: "We can typically begin within 1-2 weeks of engagement, depending on scope and team availability."
-          },
-          {
-            question: "Do you work remotely or on-site?",
-            answer: "We offer flexible engagement models including fully remote, on-site, or hybrid arrangements depending on client needs and project requirements."
-          }
-        ]}
-      />
+      <FAQSchema faqs={faqs} />
 
       <Header />
 
@@ -289,6 +290,9 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={faqs} />
 
       {/* Map Section */}
       <section style={{ height: '400px', background: '#f7f7f7' }}>

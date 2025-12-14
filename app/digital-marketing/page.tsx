@@ -4,6 +4,30 @@ import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import Link from 'next/link'
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/StructuredData'
+import FAQSection from '@/components/FAQSection'
+
+const faqs = [
+  {
+    question: "What is included in your digital marketing strategy packages?",
+    answer: "Our packages include digital marketing strategy development, brand development and guidelines, social media setup and management, competitive analysis, and analytics reporting. Package scope varies from startup (R5,000 - R9,000) to enterprise level (R25,000 - R49,999)."
+  },
+  {
+    question: "How much does social media management cost?",
+    answer: "Our social media management services range from R10,000 per month for startups to R60,000 per month for enterprise-level companies, depending on the number of platforms, posting frequency, and engagement requirements."
+  },
+  {
+    question: "What does your go-to-market strategy include?",
+    answer: "Our go-to-market strategies seamlessly consolidate sales enablement, marketing campaigns, distribution channels, pricing strategies, brand positioning, competitive analysis, and consumer insights into a practical roadmap for business success."
+  },
+  {
+    question: "Do you help with brand development?",
+    answer: "Yes, we provide comprehensive brand development services including brand strategy, visual identity guidelines, brand positioning, and messaging frameworks to ensure consistent brand communication across all channels."
+  },
+  {
+    question: "Can you help us develop social media policies?",
+    answer: "Absolutely. We help develop your ideal digital footprint in line with global best practices, including creating necessary social media policies and procedures while mitigating risk."
+  }
+]
 
 export const metadata: Metadata = {
   title: 'Digital Marketing Services',
@@ -41,30 +65,7 @@ export default function DigitalMarketing() {
           { name: 'Digital Marketing', url: 'https://www.outsourcedcto.co.za/digital-marketing' }
         ]}
       />
-      <FAQSchema
-        faqs={[
-          {
-            question: "What is included in your digital marketing strategy packages?",
-            answer: "Our packages include digital marketing strategy development, brand development and guidelines, social media setup and management, competitive analysis, and analytics reporting. Package scope varies from startup (R5,000) to enterprise level (R25,000)."
-          },
-          {
-            question: "How much does social media management cost?",
-            answer: "Our social media management services range from R10,000 per month for startups to R60,000 per month for enterprise-level companies, depending on the number of platforms, posting frequency, and engagement requirements."
-          },
-          {
-            question: "What does your go-to-market strategy include?",
-            answer: "Our go-to-market strategies seamlessly consolidate sales enablement, marketing campaigns, distribution channels, pricing strategies, brand positioning, competitive analysis, and consumer insights into a practical roadmap for business success."
-          },
-          {
-            question: "Do you help with brand development?",
-            answer: "Yes, we provide comprehensive brand development services including brand strategy, visual identity guidelines, brand positioning, and messaging frameworks to ensure consistent brand communication across all channels."
-          },
-          {
-            question: "Can you help us develop social media policies?",
-            answer: "Absolutely. We help develop your ideal digital footprint in line with global best practices, including creating necessary social media policies and procedures while mitigating risk."
-          }
-        ]}
-      />
+      <FAQSchema faqs={faqs} />
 
       <Header />
 
@@ -130,7 +131,7 @@ export default function DigitalMarketing() {
             <div className="service-box" style={{ border: '2px solid #eee' }}>
               <h3 style={{ color: '#ba292c', fontSize: '22px', marginBottom: '10px' }}>Start-up Business</h3>
               <p style={{ fontSize: '32px', fontWeight: 700, color: '#303030', marginBottom: '20px' }}>
-                R5,000
+                R5,000 - R9,000
               </p>
               <ul style={{ textAlign: 'left', listStyle: 'none', padding: 0 }}>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #eee' }}>Digital Marketing Strategy</li>
@@ -149,7 +150,7 @@ export default function DigitalMarketing() {
               </div>
               <h3 style={{ color: '#ba292c', fontSize: '22px', marginBottom: '10px' }}>Small to Medium Business</h3>
               <p style={{ fontSize: '32px', fontWeight: 700, color: '#303030', marginBottom: '20px' }}>
-                R12,000
+                R12,000 - R14,999
               </p>
               <ul style={{ textAlign: 'left', listStyle: 'none', padding: 0 }}>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #eee' }}>Comprehensive Digital Strategy</li>
@@ -166,7 +167,7 @@ export default function DigitalMarketing() {
             <div className="service-box" style={{ border: '2px solid #eee' }}>
               <h3 style={{ color: '#ba292c', fontSize: '22px', marginBottom: '10px' }}>Large Company</h3>
               <p style={{ fontSize: '32px', fontWeight: 700, color: '#303030', marginBottom: '20px' }}>
-                R25,000
+                R25,000 - R49,999
               </p>
               <ul style={{ textAlign: 'left', listStyle: 'none', padding: 0 }}>
                 <li style={{ padding: '10px 0', borderBottom: '1px solid #eee' }}>Enterprise Digital Strategy</li>
@@ -186,6 +187,9 @@ export default function DigitalMarketing() {
           </p>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={faqs} />
 
       {/* CTA Section */}
       <section className="section" style={{ background: '#ba292c', textAlign: 'center' }}>

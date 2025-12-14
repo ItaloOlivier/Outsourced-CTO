@@ -4,6 +4,30 @@ import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 import Link from 'next/link'
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/StructuredData'
+import FAQSection from '@/components/FAQSection'
+
+const faqs = [
+  {
+    question: "What is digital transformation?",
+    answer: "Digital transformation is the process of using digital technologies to fundamentally change how your business operates and delivers value to customers. It involves re-engineering processes, adopting new technology platforms, and developing new digital capabilities to stay competitive in today's rapidly evolving market."
+  },
+  {
+    question: "How long does a digital transformation project typically take?",
+    answer: "The duration varies significantly depending on scope and complexity. A targeted improvement project might take 3-6 months, while a comprehensive enterprise-wide transformation can span 1-3 years. We work with you to develop phased roadmaps that deliver value incrementally."
+  },
+  {
+    question: "What methodologies do you use for digital transformation?",
+    answer: "We employ Agile practices including DSDM, SCRUM, and SAFe (Scaled Agile Framework) to ensure iterative delivery, flexibility, and continuous improvement throughout your transformation journey."
+  },
+  {
+    question: "How do you assess our current digital capabilities?",
+    answer: "We use industry-standard maturity models to assess your current capabilities across technology, processes, and people. This includes skills gap analysis, technology capability assessments, and can incorporate Meyers-Briggs testing to optimize team dynamics."
+  },
+  {
+    question: "What industries do you serve for digital transformation?",
+    answer: "We serve all industries across South Africa. Our cross-industry experience means we bring fresh perspectives and proven patterns from various sectors, helping you benefit from innovations that have worked elsewhere."
+  }
+]
 
 export const metadata: Metadata = {
   title: 'Digital Transformation Services',
@@ -43,30 +67,7 @@ export default function DigitalTransformation() {
           { name: 'Digital Transformation', url: 'https://www.outsourcedcto.co.za/digital-transformation' }
         ]}
       />
-      <FAQSchema
-        faqs={[
-          {
-            question: "What is digital transformation?",
-            answer: "Digital transformation is the process of using digital technologies to fundamentally change how your business operates and delivers value to customers. It involves re-engineering processes, adopting new technology platforms, and developing new digital capabilities to stay competitive in today's rapidly evolving market."
-          },
-          {
-            question: "How long does a digital transformation project typically take?",
-            answer: "The duration varies significantly depending on scope and complexity. A targeted improvement project might take 3-6 months, while a comprehensive enterprise-wide transformation can span 1-3 years. We work with you to develop phased roadmaps that deliver value incrementally."
-          },
-          {
-            question: "What methodologies do you use for digital transformation?",
-            answer: "We employ Agile practices including DSDM, SCRUM, and SAFe (Scaled Agile Framework) to ensure iterative delivery, flexibility, and continuous improvement throughout your transformation journey."
-          },
-          {
-            question: "How do you assess our current digital capabilities?",
-            answer: "We use industry-standard maturity models to assess your current capabilities across technology, processes, and people. This includes skills gap analysis, technology capability assessments, and can incorporate Meyers-Briggs testing to optimize team dynamics."
-          },
-          {
-            question: "What industries do you serve for digital transformation?",
-            answer: "We serve all industries across South Africa. Our cross-industry experience means we bring fresh perspectives and proven patterns from various sectors, helping you benefit from innovations that have worked elsewhere."
-          }
-        ]}
-      />
+      <FAQSchema faqs={faqs} />
 
       <Header />
 
@@ -200,6 +201,9 @@ export default function DigitalTransformation() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection faqs={faqs} />
 
       {/* CTA Section */}
       <section className="section" style={{ background: '#ba292c', textAlign: 'center' }} aria-labelledby="cta-heading">
