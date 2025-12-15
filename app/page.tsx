@@ -88,22 +88,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Info Boxes Section - 3 Columns below slider */}
-      <div className="info-boxes">
-        <div className="info-box">
-          <h3>Digital Transformation</h3>
-          <p>We help companies identify the gaps between where they are now and where they need to be, then close them.</p>
-        </div>
-        <div className="info-box">
-          <h3>Digital Marketing</h3>
-          <p>Just like your own CTO, we will spearhead your digital marketing innovation by identifying new opportunities.</p>
-        </div>
-        <div className="info-box">
-          <h3>IT Recruitment</h3>
-          <p>Outsourced CTO offers IT recruitment services that deliver highly qualified, best-in-class candidates, guaranteed.</p>
-        </div>
-      </div>
-
       {/* What We Do Section */}
       <section className="section">
         <div className="container">
