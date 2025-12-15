@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -118,19 +119,7 @@ export default function Home() {
           <div className="services-grid">
             <div className="service-box">
               <div className="service-icon">
-                {/* Strategy/Planning icon - matches old site */}
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#303030" stroke="none">
-                  <rect x="2" y="2" width="20" height="20" rx="1" fill="none" stroke="#303030" strokeWidth="1.5"/>
-                  <circle cx="6" cy="6" r="1.5" fill="#303030"/>
-                  <circle cx="18" cy="6" r="1.5" fill="#303030"/>
-                  <circle cx="6" cy="18" r="1.5" fill="#303030"/>
-                  <circle cx="18" cy="18" r="1.5" fill="#303030"/>
-                  <line x1="6" y1="6" x2="12" y2="12" stroke="#303030" strokeWidth="1.5"/>
-                  <line x1="12" y1="12" x2="18" y2="6" stroke="#303030" strokeWidth="1.5"/>
-                  <line x1="12" y1="12" x2="18" y2="18" stroke="#303030" strokeWidth="1.5"/>
-                  <polygon points="18,18 15,16 16,19" fill="#303030"/>
-                  <polygon points="18,6 15,8 16,5" fill="#303030"/>
-                </svg>
+                <Image src="/images/strategy.png" alt="Digital Transformation" width={80} height={80} />
               </div>
               <h3>Digital Transformation</h3>
               <p>We help companies identify the gaps between where they are now and where they need to be, then close them.</p>
@@ -138,15 +127,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                {/* Group of people icon - matches old site */}
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="#303030" stroke="none">
-                  <circle cx="12" cy="5" r="3"/>
-                  <circle cx="5" cy="8" r="2.5"/>
-                  <circle cx="19" cy="8" r="2.5"/>
-                  <ellipse cx="12" cy="14" rx="4" ry="3"/>
-                  <ellipse cx="5" cy="16" rx="3" ry="2.5"/>
-                  <ellipse cx="19" cy="16" rx="3" ry="2.5"/>
-                </svg>
+                <Image src="/images/recruitment.png" alt="IT Recruitment" width={80} height={80} />
               </div>
               <h3>IT Recruitment</h3>
               <p>Delivering highly qualified, best-in-class candidates, guaranteed for your technology needs.</p>
@@ -154,12 +135,7 @@ export default function Home() {
 
             <div className="service-box">
               <div className="service-icon">
-                {/* Computer monitor icon - matches old site */}
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <rect x="2" y="3" width="20" height="14" rx="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
+                <Image src="/images/marketing.png" alt="Digital Marketing" width={80} height={80} />
               </div>
               <h3>Digital Marketing</h3>
               <p>We implement lean methodologies to develop winning go-to-market strategies.</p>
