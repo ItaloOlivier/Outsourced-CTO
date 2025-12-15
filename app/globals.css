@@ -6,6 +6,7 @@
 
 :root {
   --accent-color: #ba292c;
+  --accent-turquoise: #35c4c4;
   --text-color: #828282;
   --header-color: #303030;
   --white: #ffffff;
@@ -307,6 +308,46 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-color);
 }
 
+.service-box .read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--accent-turquoise);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.service-box .read-more:hover {
+  background: #2aa3a3;
+}
+
+/* Service box with border styling */
+.service-box-bordered {
+  background: var(--white);
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.service-box-bordered:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border-color: transparent;
+}
+
+/* Turquoise heading line */
+.heading-line-turquoise {
+  width: 50px;
+  height: 2px;
+  background: var(--accent-turquoise);
+  margin: 15px auto 20px;
+}
+
 /* Ultimate Headings Style */
 .ultimate-heading {
   margin-bottom: 25px;
@@ -481,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   .services-grid,
   .info-boxes,
   .footer-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .info-boxes {

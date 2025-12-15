@@ -27,11 +27,11 @@ export default function Footer() {
 
         <div className="footer-col">
           <h4>Services</h4>
-          <p>Digital Transformation</p>
+          <Link href="/digital-transformation">Digital Transformation</Link>
+          <Link href="/digital-marketing">Digital Marketing</Link>
+          <Link href="/it-recruitment">IT Recruitment</Link>
           <p>Business Architecture</p>
           <p>IT Project Management</p>
-          <p>Digital Business Models</p>
-          <p>IT Recruitment</p>
         </div>
 
         <div className="footer-col">

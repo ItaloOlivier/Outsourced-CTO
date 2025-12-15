@@ -104,109 +104,44 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About Section */}
+      {/* What We Do Section */}
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <h2>Your Partner In IT Innovation</h2>
-            <div style={{ width: '50px', height: '2px', background: '#ba292c', margin: '20px auto' }}></div>
+            <h2>What We Do</h2>
+            <div className="heading-line-turquoise"></div>
             <p>
               At Outsourced CTO, our hand-picked experts and extensive experience across industries
               fuel our passion for IT and digital innovation.
             </p>
           </div>
 
-          <div className="services-grid">
-            <div className="service-box">
+          <div className="services-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+            <div className="service-box" style={{ border: '1px solid #e8e8e8' }}>
               <div className="service-icon">
                 <Image src="/images/strategy.png" alt="Digital Transformation" width={80} height={80} />
               </div>
               <h3>Digital Transformation</h3>
               <p>We help companies identify the gaps between where they are now and where they need to be, then close them.</p>
+              <Link href="/digital-transformation" className="read-more">Read More</Link>
             </div>
 
-            <div className="service-box">
+            <div className="service-box" style={{ border: '1px solid #e8e8e8' }}>
               <div className="service-icon">
                 <Image src="/images/recruitment.png" alt="IT Recruitment" width={80} height={80} />
               </div>
               <h3>IT Recruitment</h3>
               <p>Delivering highly qualified, best-in-class candidates, guaranteed for your technology needs.</p>
+              <Link href="/it-recruitment" className="read-more">Read More</Link>
             </div>
 
-            <div className="service-box">
+            <div className="service-box" style={{ border: '1px solid #e8e8e8' }}>
               <div className="service-icon">
                 <Image src="/images/marketing.png" alt="Digital Marketing" width={80} height={80} />
               </div>
               <h3>Digital Marketing</h3>
               <p>We implement lean methodologies to develop winning go-to-market strategies.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                  <line x1="12" y1="22.08" x2="12" y2="12"/>
-                </svg>
-              </div>
-              <h3>Business Architecture</h3>
-              <p>Strategic alignment of business capabilities, processes, and technology to drive organizational efficiency.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <line x1="18" y1="20" x2="18" y2="10"/>
-                  <line x1="12" y1="20" x2="12" y2="4"/>
-                  <line x1="6" y1="20" x2="6" y2="14"/>
-                </svg>
-              </div>
-              <h3>IT Workflow & Business Analysis</h3>
-              <p>Comprehensive analysis of your IT workflows and business processes to optimize operations.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
-              <h3>IT Programme/Project Management</h3>
-              <p>Expert project management using Agile practices like DSDM, SCRUM, and SAFe methodologies.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                </svg>
-              </div>
-              <h3>Digital Business Models</h3>
-              <p>Our MBA-qualified consultants develop innovative digital business models for today&apos;s dynamic era.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-              </div>
-              <h3>Capability Assessments & Roadmaps</h3>
-              <p>Evaluate your current capabilities and create strategic roadmaps for technology investments.</p>
-            </div>
-
-            <div className="service-box">
-              <div className="service-icon">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#303030" strokeWidth="1.5">
-                  <polyline points="23 4 23 10 17 10"/>
-                  <polyline points="1 20 1 14 7 14"/>
-                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
-                </svg>
-              </div>
-              <h3>Organisational Change Management</h3>
-              <p>We specialize in easing the transition into a streamlined digital business with the correct culture.</p>
+              <Link href="/digital-marketing" className="read-more">Read More</Link>
             </div>
           </div>
         </div>
